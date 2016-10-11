@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="DiceJobsSample" >
+	<fields>
+		<uniqueKey>id</uniqueKey>
+		<!-- Note:
+			This just a sample solr configuration, and does NOT represent that used
+			to power Dice.com's search or any of our other search applications. 
+			
+			We recommend use of synonyms, stop words, and where appropriate, stemming when 
+			analyzing documents. It is also important to strip out noise characters such 
+			as apostrophes, comma's and other punctuation marks.
+		-->
+		<field name="id"	 			type="int"			indexed="true" stored="true"  multiValued="false" />
+		<field name="employer" 			type="text_general" indexed="true" stored="true"  multiValued="true"/>
+		<field name="jobTitle" 			type="text_general" indexed="true" stored="true"  multiValued="false"/>
+		<field name="jobSkills" 		type="text_general" indexed="true" stored="true"  multiValued="true"/>
+		<field name="city" 				type="text_general" indexed="true" stored="true"  multiValued="false"/>
+		<field name="state" 			type="text_general" indexed="true" stored="true"  multiValued="false"/>
+				
+		<field name="geoCode" 	type="location" indexed="true" stored="true"/>
+		<dynamicField name="*_coordinate"  type="tdouble" indexed="true"  stored="false" />
+		
+		<field name="_version_" type="long" indexed="true" stored="true" multiValued="false" />
+	</fields>
+
+	<uniqueKey>id</uniqueKey> 
+	
+	<types>
+		<fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+		  <analyzer type="index">
+			<tokenizer class="solr.StandardTokenizerFactory"/>
+			<filter class="solr.LowerCaseFilterFactory"/>
+			<filter class="solr.EnglishPossessiveFilterFactory"/>
+		  </analyzer>
+		  <analyzer type="query">
+			<tokenizer class="solr.StandardTokenizerFactory"/>
+			<filter class="solr.LowerCaseFilterFactory"/>
+			<filter class="solr.EnglishPossessiveFilterFactory"/>
+		  </analyzer>
+		</fieldType>
+		
+		
+		<fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+    	<fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+    	<fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+    	<fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+		<fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+		
+		<fieldType name="tint" class="solr.TrieIntField" precisionStep="8" positionIncrementGap="0"/>
+    	<fieldType name="tfloat" class="solr.TrieFloatField" precisionStep="8" positionIncrementGap="0"/>
+    	<fieldType name="tlong" class="solr.TrieLongField" precisionStep="8" positionIncrementGap="0"/>
+    	<fieldType name="tdouble" class="solr.TrieDoubleField" precisionStep="8" positionIncrementGap="0"/>
+
+		<fieldType name="location" class="solr.LatLonType" subFieldSuffix="_coordinate"/>
+    
+	</types>
+</schema>
