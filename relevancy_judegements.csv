@@ -1,0 +1,11 @@
+query|fq|location|relevant
+java developer|{!geofilt}&sfield=geoCode&pt=41.884251,-87.632446&d=48.000000|Chicago, IL|8,20,27,52,127,159,194,354,364,414,485,499,677,713,960,1022,1026,1029
+data warehouse|{!geofilt}&sfield=geoCode&pt=41.884251,-87.632446&d=48.000000|Chicago, IL|1078,1996,254,254,870,1968
+web services|{!geofilt}&sfield=geoCode&pt=40.7127837, -74.00594130000002&d=48.000000|New York, NY|1342,1449,395,1272,1512,54,608,1528,38,84,150,289,368,370,381
+dice|{!geofilt}&sfield=geoCode&pt=40.7127837, -74.00594130000002&d=48.000000|New York, NY|64,107,128,270,341,442,493,496,533,534,535,554,577,603,616,908,951,976,1113,1310
+python developer|{!geofilt}&sfield=geoCode&pt=40.7127837, -74.00594130000002&d=48.000000|New York, NY|694,1167,1901
+networking engineer|{!geofilt}&sfield=geoCode&pt=40.7127837, -74.00594130000002&d=48.000000|New York, NY|1472,829,896
+javascript engineer|||554,583,802,1054,1091,1094,1095,1100,1108,1117,1159,1160,1170,1200
+big data \ data science|{!geofilt}&sfield=geoCode&pt=40.7127837, -74.00594130000002&d=48.000000|New York, NY|1702,898,908
+software engineering|{!geofilt}&sfield=geoCode&pt=30.267153, -97.74306079999997&d=48.000000|Austin, TX|1277,110,902,1905,1937,810,851,1614,653,800,1581,1747,1223,1715,1210,1659,244
+project manager|||380,1783
