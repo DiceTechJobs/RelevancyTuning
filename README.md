@@ -13,3 +13,7 @@ Python libraries:
 * pandas
 * numpy
 * scikit-optimize
+
+Slides from my talk: http://www.slideshare.net/SimonHughes13/evolving-the-optimal-relevancy-ranking-model-at-dicecom
+
+The slides and video of the talk will be made available online in a couple of months by LucidWorks.
