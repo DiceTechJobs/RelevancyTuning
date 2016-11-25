@@ -4,7 +4,6 @@ Dice.com tutorial on using black box optimization algorithms to tune your Solr s
 ## Required software
 Solr (Solr core is for 5.0+, for earlier solr versions or later ones, you will need to modify the configs and re-index the data from the notebook).
 
-
 Python 2.7
 
 Python libraries:
@@ -15,4 +14,4 @@ Python libraries:
 
 Slides from my talk: http://www.slideshare.net/SimonHughes13/evolving-the-optimal-relevancy-ranking-model-at-dicecom
 
-The slides and video of the talk will be made available online in a couple of months by LucidWorks.
+Vide of my talk: https://www.youtube.com/watch?v=z4c1xU7arhc&index=24&list=PLU6n9Voqu_1F1Skr8qlaO8_VtF4D8JEhm
