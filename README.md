@@ -15,3 +15,6 @@ Python libraries:
 [Slides from my talk](http://www.slideshare.net/SimonHughes13/evolving-the-optimal-relevancy-ranking-model-at-dicecom)
 
 [Video of my talk](https://www.youtube.com/watch?v=z4c1xU7arhc&index=24&list=PLU6n9Voqu_1F1Skr8qlaO8_VtF4D8JEhm)
+
+## Related Projects
+* https://github.com/mitre/quaerite - uses a GA to optimize Solr parameters
